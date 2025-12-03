@@ -49,7 +49,7 @@ const bookingSchema = new mongoose.Schema({
   createdAt: { type: Date, default: Date.now },
 });
 
-const Booking = mongoose.model("Booking", bookingSchema);
+const Booking = mongoose.model("Booking", bookingSchema); 
 
 // Seed data
 const seedData = async () => {

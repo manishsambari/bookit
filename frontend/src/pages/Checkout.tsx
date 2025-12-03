@@ -49,7 +49,7 @@ export default function Checkout() {
       } else {
         alert('Invalid promo code');
       }
-    } catch (error) {
+    } catch {
       alert('Error validating promo code');
     }
   };
@@ -85,7 +85,7 @@ export default function Checkout() {
           bookingId: response.data.bookingId
         }
       });
-    } catch (error) {
+    } catch {
       navigate('/result', {
         state: {
           success: false,
